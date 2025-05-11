@@ -17,117 +17,117 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SpotLight
 build_property.RootNamespace = SpotLight
-build_property.ProjectDir = H:\Primary Workplace\visualProgramming\FinalLast\SpotLight\SpotLight\
+build_property.ProjectDir = H:\Primary Workplace\SpotLight\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = H:\Primary Workplace\visualProgramming\FinalLast\SpotLight\SpotLight
+build_property.MSBuildProjectDirectory = H:\Primary Workplace\SpotLight
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Account/AdminLogin.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Account/AdminLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbkxvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Account/OrganizerLogin.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Account/OrganizerLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPcmdhbml6ZXJMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Account/OrganizerSignup.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Account/OrganizerSignup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPcmdhbml6ZXJTaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Account/ParticipantLogin.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Account/ParticipantLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXJ0aWNpcGFudExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Account/ParticipantSignup.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Account/ParticipantSignup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXJ0aWNpcGFudFNpZ251cC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Admin/AllEvents.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Admin/AllEvents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWxsRXZlbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Admin/AllOrganizers.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Admin/AllOrganizers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWxsT3JnYW5pemVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Admin/AllParticipants.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Admin/AllParticipants.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWxsUGFydGljaXBhbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Admin/EventRequests.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Admin/EventRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRXZlbnRSZXF1ZXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Admin/Index.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Home/Index.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Home/Privacy.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Organizer/CreateEvent.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Organizer/CreateEvent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemVyXENyZWF0ZUV2ZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Organizer/EditEvent.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Organizer/EditEvent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemVyXEVkaXRFdmVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Organizer/Index.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Organizer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Organizer/MyEvents.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Organizer/MyEvents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemVyXE15RXZlbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Organizer/ParticipationRequests.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Organizer/ParticipationRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JnYW5pemVyXFBhcnRpY2lwYXRpb25SZXF1ZXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Participant/Index.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Participant/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Participant/MyEvents.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Participant/MyEvents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRcTXlFdmVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Participant/PendingRequests.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Participant/PendingRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRcUGVuZGluZ1JlcXVlc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Participant/UpcomingEvents.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Participant/UpcomingEvents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRcVXBjb21pbmdFdmVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Shared/Error.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Shared/_ValidationScriptsPartial.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/_ViewImports.cshtml]
+[H:/Primary Workplace/SpotLight/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/_ViewStart.cshtml]
+[H:/Primary Workplace/SpotLight/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Primary Workplace/visualProgramming/FinalLast/SpotLight/SpotLight/Views/Shared/_Layout.cshtml]
+[H:/Primary Workplace/SpotLight/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mf56al4i7a

@@ -4728,11 +4728,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Primary Workplace\\visualProgramming\\FinalLast\\SpotLight\\SpotLight\\SpotLight.csproj",
+      "projectUniqueName": "H:\\Primary Workplace\\SpotLight\\SpotLight.csproj",
       "projectName": "SpotLight",
-      "projectPath": "H:\\Primary Workplace\\visualProgramming\\FinalLast\\SpotLight\\SpotLight\\SpotLight.csproj",
+      "projectPath": "H:\\Primary Workplace\\SpotLight\\SpotLight.csproj",
       "packagesPath": "C:\\Users\\tanvi\\.nuget\\packages\\",
-      "outputPath": "H:\\Primary Workplace\\visualProgramming\\FinalLast\\SpotLight\\SpotLight\\obj\\",
+      "outputPath": "H:\\Primary Workplace\\SpotLight\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

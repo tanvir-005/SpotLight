@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpotLight")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec4f454b1087d37dc8072545a7162fb325cb9ab8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpotLight")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpotLight")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
