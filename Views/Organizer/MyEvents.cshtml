@@ -1,0 +1,44 @@
+@model IEnumerable<SpotLight.Models.Event>
+@{
+    ViewData["Title"] = "My Events";
+}
+
+<div class="container mt-4">
+    <h2>My Events</h2>
+    <div class="table-responsive mt-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                    <th>Total Seats</th>
+                    <th>Enrolled</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var event_ in Model)
+                {
+                    <tr>
+                        <td>@event_.Title</td>
+                        <td>@event_.Date.ToShortDateString()</td>
+                        <td>@event_.Time.ToString(@"hh\:mm")</td>
+                        <td>@event_.Venue</td>
+                        <td>@event_.TotalSeats</td>
+                        <td>@event_.Participations.Count(p => p.Status)</td>
+                        <td>
+                            <a asp-action="EditEvent" asp-route-id="@event_.EventId" class="btn btn-primary btn-sm">Edit</a>
+                            <a asp-action="ParticipationRequests" asp-route-eventId="@event_.EventId" class="btn btn-info btn-sm">View Requests</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No events created yet.</div>
+    }
+</div> 

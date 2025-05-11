@@ -1,0 +1,41 @@
+@model IEnumerable<SpotLight.Models.Event>
+@{
+    ViewData["Title"] = "All Events";
+}
+
+<div class="container mt-4">
+    <h2>All Events</h2>
+    <div class="table-responsive mt-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Organizer</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                    <th>Total Seats</th>
+                    <th>Enrolled</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var event_ in Model)
+                {
+                    <tr>
+                        <td>@event_.Title</td>
+                        <td>@event_.Organizer.InstitutionName</td>
+                        <td>@event_.Date.ToShortDateString()</td>
+                        <td>@event_.Time.ToString(@"hh\:mm")</td>
+                        <td>@event_.Venue</td>
+                        <td>@event_.TotalSeats</td>
+                        <td>@event_.Participations.Count(p => p.Status)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No events found.</div>
+    }
+</div> 

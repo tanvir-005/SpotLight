@@ -1,0 +1,37 @@
+@model IEnumerable<SpotLight.Models.Organizer>
+@{
+    ViewData["Title"] = "All Organizers";
+}
+
+<div class="container mt-4">
+    <h2>Registered Organizers</h2>
+    <div class="table-responsive mt-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Institution</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Events Created</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var organizer in Model)
+                {
+                    <tr>
+                        <td>@organizer.InstitutionName</td>
+                        <td>@organizer.Email</td>
+                        <td>@organizer.Contact</td>
+                        <td>@organizer.Address</td>
+                        <td>@organizer.Events.Count</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No organizers registered.</div>
+    }
+</div> 

@@ -1,0 +1,50 @@
+@model IEnumerable<SpotLight.Models.EventRequest>
+@{
+    ViewData["Title"] = "Event Requests";
+}
+
+<div class="container mt-4">
+    <h2>Pending Event Requests</h2>
+    <div class="table-responsive mt-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Organizer</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                    <th>Seats</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var request in Model)
+                {
+                    <tr>
+                        <td>@request.Title</td>
+                        <td>@request.Organizer.InstitutionName</td>
+                        <td>@request.Date.ToShortDateString()</td>
+                        <td>@request.Time.ToString(@"hh\:mm")</td>
+                        <td>@request.Venue</td>
+                        <td>@request.NumberOfSeats</td>
+                        <td>
+                            <form asp-action="ApproveEventRequest" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@request.RequestId" />
+                                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                            </form>
+                            <form asp-action="RejectEventRequest" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@request.RequestId" />
+                                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No pending event requests.</div>
+    }
+</div> 

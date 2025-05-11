@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    var userType = Context.Session.GetString("UserType");
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to SpotLight</h1>
+    <p class="lead">Your platform for managing and participating in events</p>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">For Organizers</h5>
+                <p class="card-text">Create and manage your events, handle participation requests, and track attendance.</p>
+                @if (userType == null)
+                {
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Account" asp-action="OrganizerLogin" class="btn btn-primary">Login</a>
+                        <a asp-controller="Account" asp-action="OrganizerSignup" class="btn btn-outline-primary">Register</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">For Participants</h5>
+                <p class="card-text">Browse upcoming events, request participation, and manage your event enrollments.</p>
+                @if (userType == null)
+                {
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Account" asp-action="ParticipantLogin" class="btn btn-primary">Login</a>
+                        <a asp-controller="Account" asp-action="ParticipantSignup" class="btn btn-outline-primary">Register</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">For Administrators</h5>
+                <p class="card-text">Manage event requests, monitor system activity, and ensure smooth operation.</p>
+                @if (userType == null)
+                {
+                    <div class="d-grid">
+                        <a asp-controller="Account" asp-action="AdminLogin" class="btn btn-primary">Login</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (userType != null)
+{
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Quick Actions</h5>
+                    <div class="d-flex gap-2">
+                        @if (userType == "Admin")
+                        {
+                            <a asp-controller="Admin" asp-action="EventRequests" class="btn btn-primary">View Event Requests</a>
+                            <a asp-controller="Admin" asp-action="AllEvents" class="btn btn-primary">View All Events</a>
+                            <a asp-controller="Admin" asp-action="AllOrganizers" class="btn btn-primary">Manage Organizers</a>
+                        }
+                        else if (userType == "Organizer")
+                        {
+                            <a asp-controller="Organizer" asp-action="CreateEvent" class="btn btn-primary">Create Event</a>
+                            <a asp-controller="Organizer" asp-action="MyEvents" class="btn btn-primary">View My Events</a>
+                        }
+                        else if (userType == "Participant")
+                        {
+                            <a asp-controller="Participant" asp-action="UpcomingEvents" class="btn btn-primary">Browse Events</a>
+                            <a asp-controller="Participant" asp-action="MyEvents" class="btn btn-primary">View My Events</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

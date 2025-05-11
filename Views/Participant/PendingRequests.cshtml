@@ -1,0 +1,32 @@
+@model IEnumerable<SpotLight.Models.EventParticipation>
+@{
+    ViewData["Title"] = "Pending Requests";
+}
+
+<div class="container mt-4">
+    <h2>My Pending Requests</h2>
+    <div class="row mt-4">
+        @foreach (var participation in Model)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@participation.Event.Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@participation.Event.Organizer.InstitutionName</h6>
+                        <p class="card-text">@participation.Event.Description</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Date:</strong> @participation.Event.Date.ToShortDateString()</li>
+                            <li><strong>Time:</strong> @participation.Event.Time.ToString(@"hh\:mm")</li>
+                            <li><strong>Venue:</strong> @participation.Event.Venue</li>
+                            <li><strong>Status:</strong> <span class="badge bg-warning">Pending</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">You don't have any pending requests.</div>
+    }
+</div> 

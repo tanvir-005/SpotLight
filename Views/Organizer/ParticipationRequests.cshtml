@@ -1,0 +1,67 @@
+@model SpotLight.Models.Event
+@{
+    ViewData["Title"] = "Participation Requests";
+}
+
+<div class="container mt-4">
+    <h2>Participation Requests for @Model.Title</h2>
+    <div class="alert alert-info">
+        Total Seats: @Model.TotalSeats | Enrolled: @Model.Participations.Count(p => p.Status)
+    </div>
+
+    <div class="table-responsive mt-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Participant Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var participation in Model.Participations)
+                {
+                    <tr>
+                        <td>@participation.Participant.Name</td>
+                        <td>@participation.Participant.Email</td>
+                        <td>@participation.Participant.Contact</td>
+                        <td>
+                            @if (participation.Status)
+                            {
+                                <span class="badge bg-success">Approved</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning">Pending</span>
+                            }
+                        </td>
+                        <td>
+                            @if (!participation.Status)
+                            {
+                                <form asp-action="ApproveParticipation" method="post" class="d-inline">
+                                    <input type="hidden" name="eventId" value="@Model.EventId" />
+                                    <input type="hidden" name="participantId" value="@participation.ParticipantId" />
+                                    <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                                </form>
+                                <form asp-action="RejectParticipation" method="post" class="d-inline">
+                                    <input type="hidden" name="eventId" value="@Model.EventId" />
+                                    <input type="hidden" name="participantId" value="@participation.ParticipantId" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (!Model.Participations.Any())
+    {
+        <div class="alert alert-info">No participation requests yet.</div>
+    }
+    <div class="mt-4">
+        <a asp-action="MyEvents" class="btn btn-secondary">Back to Events</a>
+    </div>
+</div> 

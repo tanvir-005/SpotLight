@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Participant Dashboard";
+}
+
+<div class="container mt-4">
+    <h2>Participant Dashboard</h2>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upcoming Events</h5>
+                    <p class="card-text">Browse and join upcoming events.</p>
+                    <a asp-action="UpcomingEvents" class="btn btn-primary">View Events</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">My Events</h5>
+                    <p class="card-text">View your enrolled events and pending requests.</p>
+                    <div class="btn-group">
+                        <a asp-action="MyEvents" class="btn btn-primary">Enrolled Events</a>
+                        <a asp-action="PendingRequests" class="btn btn-info">Pending Requests</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

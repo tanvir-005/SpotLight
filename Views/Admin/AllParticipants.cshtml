@@ -1,0 +1,39 @@
+@model IEnumerable<SpotLight.Models.Participant>
+@{
+    ViewData["Title"] = "All Participants";
+}
+
+<div class="container mt-4">
+    <h2>Registered Participants</h2>
+    <div class="table-responsive mt-4">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                    <th>Events Enrolled</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var participant in Model)
+                {
+                    <tr>
+                        <td>@participant.Name</td>
+                        <td>@participant.Email</td>
+                        <td>@participant.Contact</td>
+                        <td>@participant.Address</td>
+                        <td>@participant.Gender</td>
+                        <td>@participant.Participations.Count(p => p.Status)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">No participants registered.</div>
+    }
+</div> 

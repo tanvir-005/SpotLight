@@ -1,0 +1,126 @@
+@model SpotLight.ViewModels.AdminDashboardViewModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container mt-4">
+    <h2>Admin Dashboard</h2>
+
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total Events</h5>
+                    <h2 class="card-text">@Model.TotalEvents</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Active Events</h5>
+                    <h2 class="card-text">@Model.ActiveEvents</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Pending Requests</h5>
+                    <h2 class="card-text">@Model.PendingEventRequests</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total Users</h5>
+                    <h2 class="card-text">@Model.TotalUsers</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Recent Event Requests</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.RecentEventRequests.Any())
+                    {
+                        <div class="list-group">
+                            @foreach (var request in Model.RecentEventRequests)
+                            {
+                                <div class="list-group-item">
+                                    <h6 class="mb-1">@request.Title</h6>
+                                    <p class="mb-1">@request.Organizer.InstitutionName</p>
+                                    <small>@request.Date.ToShortDateString()</small>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No recent event requests</p>
+                    }
+                    <a asp-action="EventRequests" class="btn btn-primary mt-3">View All Requests</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Upcoming Events</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.UpcomingEvents.Any())
+                    {
+                        <div class="list-group">
+                            @foreach (var event_ in Model.UpcomingEvents)
+                            {
+                                <div class="list-group-item">
+                                    <h6 class="mb-1">@event_.Title</h6>
+                                    <p class="mb-1">@event_.Organizer.InstitutionName</p>
+                                    <small>@event_.Date.ToShortDateString() - @event_.Time.ToString(@"hh\:mm")</small>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No upcoming events</p>
+                    }
+                    <a asp-action="AllEvents" class="btn btn-primary mt-3">View All Events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a asp-action="EventRequests" class="btn btn-outline-primary btn-block mb-2">Manage Event Requests</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a asp-action="AllEvents" class="btn btn-outline-primary btn-block mb-2">View All Events</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a asp-action="AllOrganizers" class="btn btn-outline-primary btn-block mb-2">Manage Organizers</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a asp-action="AllParticipants" class="btn btn-outline-primary btn-block mb-2">Manage Participants</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

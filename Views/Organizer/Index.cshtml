@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Organizer Dashboard";
+}
+
+<div class="container mt-4">
+    <h2>Organizer Dashboard</h2>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Create Event</h5>
+                    <p class="card-text">Request to create a new event.</p>
+                    <a asp-action="CreateEvent" class="btn btn-primary">Create Event</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">My Events</h5>
+                    <p class="card-text">View and manage your created events.</p>
+                    <a asp-action="MyEvents" class="btn btn-primary">View Events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
